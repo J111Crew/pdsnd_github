@@ -13,7 +13,8 @@ MONTHS = ['january', 'february', 'march', 'april', 'may', 'june']
 
 def get_city():
     """
-    Asks user to input a city. The city must be either Chicago, New York City or Washington.
+    Asks user to input a city. The city must be either Chicago, New York City
+    or Washington.
 
     Returns:
         (str) city_entered - name of the city to analyze in lower case.
@@ -30,7 +31,9 @@ def get_city():
 
 def get_additional_filtering():
     """
-    Asks user whether additional filtering is desired.
+    Asks user whether additional filtering (by month, day, both or none) is
+    desired.
+
     Returns:
         (str) additional_filter: "month", "day", "both" or "none".
     """
@@ -47,8 +50,8 @@ def get_additional_filtering():
 
 def get_month():
     """
-    Asks user to input a month name or "all" (case insensitive). The month, if provided, must fall between January
-    and June.
+    Asks user to input a month name or "all" (case insensitive). The month, if
+    provided, must fall between January and June.
 
     Returns:
         (str) month_entered - "all" or name of the month in lower case.
