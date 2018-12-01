@@ -13,7 +13,19 @@ Key activities include:
 1. Merging Branches
 1. Submitting the Project to Udacity for Review
 
+Full details found here:
+
+
+
 ### Files used
-Include the files used
+.gitignore
+
+README.md
+
+bikeshare.py
+
+Required data files are not included in this repo. See:
+
+
 
 ### Credits
