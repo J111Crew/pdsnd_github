@@ -274,9 +274,9 @@ def show_raw_data(df):
     start = 0
     stop = rows_shown
     while True:
-        see_data = input("\nWould you like to see raw data? ").lower()
+        see_raw_data = input("\nWould you like to see raw data? ").lower()
 
-        if see_data == 'y' or see_data == 'yes':
+        if see_raw_data == 'y' or see_data == 'yes':
             print(df[start:stop])
             start += rows_shown
             stop += rows_shown
