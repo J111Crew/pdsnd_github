@@ -17,7 +17,8 @@ MONTHS = ['january', 'february', 'march', 'april', 'may', 'june']
 
 def get_city():
     """
-    Asks user to input a city. The city must be either Chicago, New York City or Washington.
+    Asks user to input a city. The city must be either Chicago, New York City
+    or Washington.
 
     Returns:
         (str) city_entered - name of the city to analyze in lower case.
@@ -34,7 +35,9 @@ def get_city():
 
 def get_additional_filtering():
     """
-    Asks user whether additional filtering is desired.
+    Asks user whether additional filtering (by month, day, both or none) is
+    desired.
+
     Returns:
         (str) additional_filter: "month", "day", "both" or "none".
     """
@@ -51,8 +54,8 @@ def get_additional_filtering():
 
 def get_month():
     """
-    Asks user to input a month name or "all" (case insensitive). The month, if provided, must fall between January
-    and June.
+    Asks user to input a month name or "all" (case insensitive). The month, if
+    provided, must fall between January and June.
 
     Returns:
         (str) month_entered - "all" or name of the month in lower case.
@@ -275,9 +278,9 @@ def show_raw_data(df):
     start = 0
     stop = rows_shown
     while True:
-        see_data = input("\nWould you like to see raw data? ").lower()
+        see_raw_data = input("\nWould you like to see raw data? ").lower()
 
-        if see_data == 'y' or see_data == 'yes':
+        if see_raw_data == 'y' or see_data == 'yes':
             print(df[start:stop])
             start += rows_shown
             stop += rows_shown
@@ -296,7 +299,7 @@ def main():
         user_stats(df, city)
         show_raw_data(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart the program? Please enter yes or no.\n')
         if restart.lower() != 'yes':
             break
 
