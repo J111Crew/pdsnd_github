@@ -1,5 +1,9 @@
 # bikeshare project
 # Mark Waltz
+# This file is a copy of the original bikeshare project submission
+# and is part of the Github project.  This file is modified
+# from it's original state to support the work requirements
+# of the GitHub project.
 
 import time
 import pandas as pd
